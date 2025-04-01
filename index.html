@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ol>
+    
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Beautiful Landscape" width="500">
+    
+    <!-- Contacts Table -->
+    <h2>Contacts</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Faith Kendi</td>
+            <td>2420-00200 city square</td>
+            <td>+254748805503</td>
+            <td>Kendistar@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane Warui</td>
+            <td>1234-0000</td>
+            <td>+23412345678</td>
+            <td>janeWaru@Yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Goodwill Shepherd</td>
+            <td>3456-2000</td>
+            <td>+234796752684</td>
+            <td>murithi@outlook.com</td>
+        </tr>
+        <tr>
+            <td>Yvonne Wamaitha</td>
+            <td>7890 -5678</td>
+            <td>+56734529176</td>
+            <td>Wamaitha@gmail.com</td>
+        </tr>
+        <tr>
+            <td>John Ombwola</td>
+            <td>6789-69690</td>
+            <td>+24509876543</td>
+            <td>Bob@gmail.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Canada">Canada</option>
+            <option value="Tanzania">Tanzania</option>
+        </select>
+        <br><br>
+        
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required> <label for="female">Female</label>
+        <br><br>
+        
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="Coding"> <label for="coding">Coding</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports"> <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="Music"> <label for="music">Music</label>
+        <br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
